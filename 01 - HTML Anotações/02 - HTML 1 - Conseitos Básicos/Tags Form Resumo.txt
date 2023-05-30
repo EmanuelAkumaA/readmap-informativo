@@ -1,0 +1,86 @@
+------------------------------------->> RESUMO DO HTML I - CONCEITOS BÁSICOS <<---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------->> ESTRUTURA BÁSICA DE UM FORMULÁRIO <<------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Aprendendo sobre criação de formulários em HTML.
+
+    <form>  --> Tag form para criar o formulário
+        Nome: <input type="text" name="name" /><br> 
+        Idade: <input type="number" name="idade" /><br>
+        Senha: <input type="password" name="senha" /><br>
+        <button type="submit">Enviar</button>
+    </form>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------->> EXPLICANDO O FORMS <<----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Foi usada a tag FORM que cria a estrutura dos formulário                    ->> <form></form> 
+Em seguida usamos a tag INPUT que vai pedir para o usuário as informações   ->> <input /> 
+Em seguida usamos a tag BUTTON que cria o botão                             ->> <button></button>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Assim como na tag BUTTON a tag INPUT ganha tipos, para INPUT os tipos básicos são:
+<input type="text" >               -->> Texto (para entrada de algum tipo de texto)
+<input type="number" >             -->> Número (para entrada de algum tipo de número)
+<input type="password" >           -->> Senha (para entrada de algum tipo de senha)
+<input type="email" >              -->> E-mail (para entrada de algum tipo de e-mail)
+
+E para o BUTTON os básicos são:
+<button type="submit" ></button>   -->> Botão (para entrada de algum tipo de botão)
+<button type="reset" ></button>    -->> Botão (para entrada de algum tipo de botão)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Temos também vários outros TYPE(s) de INPUT, como so seguintes:
+
+<input type="date" >               -->> Data (para entrada de algum tipo de data)
+<input type="time" >               -->> Hora (para entrada de algum tipo de hora)
+<input type="url" >                -->> URL (para entrada de algum tipo de URL)
+<input type="color" >              -->> Cor (para entrada de algum tipo de cor)
+<input type="file" >               -->> Arquivo (para entrada de algum tipo de arquivo)
+<input type="range" >              -->> Range (para entrada de algum tipo de Range)
+<input type="checkbox" >           -->> Checkbox (para entrada de algum tipo de checkbox)
+<input type="radio" >              -->> Radio (para entrada de algum tipo de radio)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------->> INSTANCIANDO O FORMS <<-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Podemos dar um NAME para o FORM para que usando o JAVASCRIPT ou outras linguagens a gente consiga validar as informações dos campos do nosso FORM
+Para dar nome ao FORM faremos assim:
+
+    <form name="signup" ></form>     -->> significa que este deve ser um formulário de cadastro.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O atributo ACTION no FORM da uma origem a ser enviada para os dados que o usuário colocou no formulário, quando o usuário clicar em enviar.
+Funciona assim:
+    <form name="signup" action="https://meu_site.com/signup" ></form>
+
+Neste exemplo, os dados do FORM será enviado para o "meu_site.com"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O atributo METHOD tem dois tipos no FORM que são:
+
+O METHOD GET -->> que vai pegar as informações e mandar via URL no navegador, o que NÃO É SEGURO
+É usado assim no FORM:
+    <form name="signup" action="https://meu_site.com/signup" method="GET" ></form>
+
+O METHOD POST -->> que vai pegar as informações e mandar via POST/REQUEST do navegador para o servidor sem expor nenhum dado na URL, o que É SEGURO
+É usado assim no FORM:
+    <form name="signup" method="POST" action="https://meu_site.com/signup"  ></form>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O atributo TARGE.no FORM agem como a tag <a></a>, porem, eles agem no tratamento dos links.
+O TARGET _blank             -->> Irá abrir o "link" em uma nova aba.
+O TARGET _self              -->> Irá abrir o "link" em mesma aba.
+O TARGET _parent            -->> Irá abrir o "link" em mesma aba e o navegador abrirá o link em mesma aba.
+O TARGET _top               -->> Irá abrir o "link" em mesma aba e o navegador abrirá o link em mesma aba e o navegador abrirá o link
+E é usado assim no FORM:
+    <form name="signup" target="_blank" method="POST" action="https://meu_site.com/signup"  ></form>
+
+Neste exemplo usamos o "_blank" para exemplificar
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+O atributo AUTOCOMPLETE no FORM tem duas opções, ON e OFF.
+O AUTOCOMPLETE ON           -->> Quando o usuário digita algo no FORM, ele vai buscar o nome do campo e o tipo de dado e o mesmo vai aparecer automaticamente.
+O AUTOCOMPLETE OFF          -->> Quando o usuário digita algo no FORM, ele não vai buscar nada, quando o usuário voltar na página, os campos não estarão preenchidos.
+É usado assim no FORM:
+    <form name="signup" autocomplete="off" method="POST" action="https://meu_site.com/signup"  ></form>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Também temos o recurso ON que será ligado ao JAVASCRIPT. Em resumo o ON significa evento.
+Como por exemplo o ONSUBMIT, no ONSUBMIT significa "Você clicou no botão" integrando com um código do JAVASCRIPT, você dará uma funcionalidade.
+É usado assim no FORM:
+    <form name="signup" onsubmit="alert('Enviei o Formulário!')" method="POST" action="https://meu_site.com/signup"  ></form>
+
+Aparecerá uma mensagem dizendo que o formulário foi enviado, o ONSUBMIT também é muito usado para válidação de FORMS.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

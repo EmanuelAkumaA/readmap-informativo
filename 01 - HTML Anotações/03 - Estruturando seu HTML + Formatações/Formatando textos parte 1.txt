@@ -1,0 +1,10 @@
+Tag <i></i>  -->> Deixa o texto em Itálico e é mais usadopara citações
+Tag <b> </b>  -->> Deixa o texto em Negrito e é mais usado para marcar palavras importantes
+Tag <u> </u>  -->> Deixa o texto em Sublinhado e é mais usado para marcar palavras importantes
+Tag <s> </s>  -->> Deixa o texto com risco de ser lido e é mais usado para marcar palavras importantes
+Tag <mark> </mark> -->> deixa o texto com marcatexto
+Tag <sup> </sup> -->> deixa o item / texto pequeno assim: ¹ ² °
+Tag <sub> </sub> -->> deixa o item / texto maior assim: x 2 °
+Tag <del> </del> -->> deixa o texto com risco de ser lido e é mais usado para marcar palavras importantes
+Tag <ins> </ins> -->> deixa o texto com marcatexto
+

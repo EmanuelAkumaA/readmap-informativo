@@ -1,0 +1,39 @@
+TAGS HTML
+
+    <head>  --> tag de cabeça do html, onde ficarão link de estilização, titulo para a pagina e o icone da página
+        <title>PÁGINA DE EXEMPLO</title>  --> Nome da Pagina no navegador 
+    </head>
+    
+-----------------------------------------------------------------------------------------------------------------------
+
+    <body>  --> tag body, onde ficarão os elementos da pagina, tais como cabeçalho, rodapé, menu, e corpo
+        <h1> Título </h1>  --> Título principal da pagina
+        <hr />  -- > serve para colocar uma linha separadora entre os elementos, linha como: _____________________
+        <p> Texto </p>  --> Texto com algumas descrições
+        <a href="https://www.google.com.br/"> Link </a>  --> Link externo para o site google
+        <img src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo do Google">  --> Imagem com o logo do google
+        <ul>  --> Lista não ordenada, com o item 1, item 2, item 3 e item 4
+            <li> Item 1 </li>  --> item numero 1 da lista 
+            <li><a href="#">Oque são tags</a></li>  --> Item numero 2, linkado a uma tag na página que leva para a section "o que são tags"
+        </ul>
+
+    </body>
+
+
+Links de ancoragem -> Ele não vai levar para um outro site, ele vai descer até a sessão desejada na propria pagina.
+Funciona assim:
+<ul> --> dentro da lista não ordenada 
+    <li><a href="#surgimento">Surgimento da Internet</a></li> --> criamos um item chamado "SURGIMENTO DA INTERNET" que será o nome do tópico
+                                                                  este tópico será linkado a um "#" que significa link por id e será dado o id como nome de "surgimento"
+</il>
+
+<h2 id="surgimento">Surgimento da internet</a></h2> --> No titulo da sessão foi adicionado um id como mesmo nome do id linkado na lista, que levará para a página quando clicado, assim fazendo um link.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tag <small>texto pequeno</small> --> serve para criar um texto pequeno.
+Tag <strong>texto importante</strong> --> serve para criar um texto importante.
+Tag <em>texto enfatizado</em> --> serve para criar um texto enfatizado.
+Tag <mark>texto marcado</mark> --> serve para criar um texto marcado.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Forma para colocar imagem de icone na página: <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

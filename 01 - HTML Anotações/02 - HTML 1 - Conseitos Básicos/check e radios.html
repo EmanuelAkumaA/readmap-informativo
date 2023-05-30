@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Pappas</title>
+</head>
+<body>
+
+<!-- METODO POST PARA QUE FACILITE O BACK END  -->
+
+    <form method="post">
+        <h2> Complementos da pizza </h2>
+        
+        <p> Quais opcionais você deseja adicionar? </p>
+
+<!-- OPCIONAL ESTÁ COMO LISTA PARA QUE NO BACK END A ESCOLHA DO USUÁRIO SEJA FEITA COMO UMA LISTA E NÃO SOBESCREVA E PEGUE O ULTIMO ITEM MARCADO -->
+<!-- DESABLED deixa um campo desabilitado -->
+        <input type="checkbox" desabled name="opcional[]" value="queijo"> + Queijo <br>
+        <input type="checkbox" name="opcional[]" value="bacon"> + Bacon <br>
+        <input type="checkbox" name="opcional[]" value="batata"> + Batata <br>
+        <input type="checkbox" name="opcional[] value="tomate"> + Tomate <br>
+
+<!-- PARA QUE OS VALORES NO RADIO SEJA APENAS 1 (SIM OU NÃO) COLOCAMOS O MESMO NOME -->
+
+        <p> Borda recheada? </p>
+        <input type="radio" name="borda" value="sim"> Sim <br>
+        <input type="radio" name="borda" value="nao"> Não <br>
+
+        <p> Bebida ? </p>
+        <input type="radio" name="bebida" value="cerveja"> Cerveja <br>
+        <input type="radio" name="bebida" value="agua-mineral"> Água Mineral <br>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebida" value="suco"> Suco <br>
+        <input type="radio" name="bebida" value="nenhum"> Nenhum <br>
+        <br>
+        <hr>
+        <br>
+        <button type="submit"> Enviar pedido </button>
+    </form>
+
+</body>
+</html>
