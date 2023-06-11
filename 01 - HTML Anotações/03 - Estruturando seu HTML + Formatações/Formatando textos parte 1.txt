@@ -8,3 +8,13 @@ Tag <sub> </sub> -->> deixa o item / texto maior assim: x 2 °
 Tag <del> </del> -->> deixa o texto com risco de ser lido e é mais usado para marcar palavras importantes
 Tag <ins> </ins> -->> deixa o texto com marcatexto
 
+Tag <font> </font> -->> usada para colocar cores e editar a fonte do texto, mas o indicado é usar o css.
+
+Tag <fieldset> </fieldset> -->> Cria um retangulo em volta do que for colocado dentro dessa tag para separar das outras 
+Tag <legend> </legend> -->> Incorporada ao fieldset da nome a o retangulo.
+
+Tag <video> </video> -->> Coloca o Video no site e tem a 
+Tag controls com valor autoplay para rodar o video automaticamente
+Dentro da Tag video temos a tag <source src"" >  -->> Para colocar a fonte do video
+
+Tag <iframe src="" > </iframe>  -->> permite que colocamos um pedaço de um site de outra pessoa no nosso
