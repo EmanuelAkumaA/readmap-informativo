@@ -1,0 +1,17 @@
+Tag <table> </table> -->> tag que vai criar a estrutura da tabela
+    Atributos da tablea 
+        border="" que coloca bordas
+        cellspacing="" coloca espaco entre as bordas 
+        cellspadding="" coloca outro tipo de espaco
+        summary="" Serve para colocar textos ao leitor de tela (resumo)
+
+Tag <tr> </tr> -->> coloca coloca uma linha na tabela e ele vai englobar todas as tabelas.
+
+    Tag <td> </td> -->> nesta tag ajuda na acessibilidade 
+    Tag <th> </th> -->> Nesta tag ele ja autoformata como cabeçalho.
+        Atributosda tag
+
+Tags para definir a ordem das tabelas.
+    Tag <thead> </thead> -->> cabeçalho da tabela
+    Tag <tbody> </tbody> -->> corpo da tabela
+    Tag <tfoot> </tfoot> -->> rodapé da tabela
