@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreupamento de Seletores</title>
+
+    <style>
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid #0e0d0d;
+            border-radius: 20px;
+            background: darkorchid;
+            color: aqua;
+        }
+
+        .texto1, .texto2 {
+            color: darkblue;
+            background: lightcoral;
+        }
+
+        #link-referencia, #link-suporte {
+            background: green;
+            color: lightblue;
+        }
+
+        #voltar {
+            border: 1px solid red;
+            background: red;
+            text-align: center;
+            margin: 10px;
+            text-transform: uppercase;
+            color: aqua;
+        }
+        
+        #botao-fechar {
+            border-radius: 10px;
+            color: aliceblue;
+            background-color: red;
+        }
+
+         
+    </style>
+
+</head>
+<body>
+    
+    <h1>Agreupamento de Seletores</h1>
+    <p class="texto1">Podemos aplicar a mesma regra CSS para vários seletores diferentes
+        Para isso, podemos separar os seletores utilizando uma virgula (.).
+    </p>
+    <div class="texto2">
+        Assim, não precisamos ficar copiando e colando o mesmo código várias vezes
+        Nós podemos fazer um bloco de CSS e reutilizar as mesmas regras!
+    </div>
+
+    <br><br>
+    <a id="link-referencia" href="#"> Clique aqui para acessaer a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#"> Clique aqui para entrar em contato</a>
+    <br><br>
+    <a id="voltar" href=""> Voltar</a>
+    <br><br>
+    <button id="botao-fechar"> Fechar Página</button>
+</body>
+</html>
